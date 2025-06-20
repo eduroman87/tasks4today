@@ -45,9 +45,42 @@ Diseñada para quienes buscan una experiencia simple, directa y visual, permite 
 
 ## 🖼️ Capturas de pantalla
 
-| Pantalla principal | Añadir tarea | Estadísticas |
-|--------------------|--------------|--------------|
-| ![Home](screenshots/home.png) | ![Add Task](screenshots/add_task.png) | ![Stats](screenshots/stats.png) |
+## 🖼️ Capturas de pantalla
+
+Aquí tienes algunas capturas reales de la aplicación **Tasks for Today** que ilustran sus funcionalidades:
+
+### Inicio y autenticación
+
+| Inicio de sesión | Registro de usuario | Pantalla principal |
+|------------------|---------------------|---------------------|
+| ![Inicio de sesión](screenshots/1-Inicio%20de%20sesion.JPG) 
+| ![Registro](screenshots/2-Registro%20de%20usuario.JPG) 
+| ![Pantalla principal](screenshots/3-Pantalla%20de%20inicio.JPG) |
+
+### Añadir y gestionar tareas
+
+| Nueva tarea (Alta, Media, Baja) | Tarea completada | Tarea eliminada |
+|-------------------|------------------|------------------|
+| ![Alta](screenshots/5-Nueva%20tarea%20prioridad%20Alta.JPG)<br>![Media](screenshots/6-Nueva%20tarea%20prioridad%20Media.JPG)<br>![Baja](screenshots/7-Nueva%20tarea%20prioridad%20baja.JPG) 
+| ![Completada](screenshots/10-Tarea%20realizada%20hacia%20la%20derecha.JPG) 
+| ![Eliminada](screenshots/11-Tarea%20eliminada%20hacia%20la%20izquierda.JPG) |
+
+### Archivado y estadísticas
+
+| Archivadas | Pop-up archivadas | Estadísticas |
+|-----------|--------------------|--------------|
+| ![Archivadas](screenshots/13-Tareas%20archivadas.JPG) 
+| ![Pop-up](screenshots/14-PopUp%20tareas%20archivadas.JPG) 
+| ![Estadísticas](screenshots/15-Estadisticas.JPG) |
+
+### Otros elementos
+
+| Modificación tarea | Navegación | Logout |
+|--------------------|------------|--------|
+| ![Modificar](screenshots/9-Modificacion%20de%20una%20tarea.JPG) 
+| ![Navegación](screenshots/12-PopPup%20Navegacion.JPG) 
+| ![Logout](screenshots/16-Logout.JPG) |
+
 
 ---
 
@@ -55,9 +88,9 @@ Diseñada para quienes buscan una experiencia simple, directa y visual, permite 
 
 Puedes clonar este repositorio y abrirlo en Android Studio:
 
-```bash
+
 git clone https://github.com/eduroman87/tasks-for-today.git
-```
+
 
 > 📌 Requiere Android Studio 2022 o superior. Asegúrate de configurar Firebase correctamente si quieres ejecutar el proyecto con autenticación.
 
