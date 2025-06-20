@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_fondo"
+    tools:context=".fragments.HomeFragment">
+
+    <ImageView
+        android:id="@+id/settingsBotonEstadisticas"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/settings_white" />
+
+    <ImageView
+        android:id="@+id/menuBotonEstadisticas"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toStartOf="@id/settingsBotonEstadisticas"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/menu_white" />
+
+    <TextView
+        android:id="@+id/tvNumeroTareasActivas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de tareas activas"
+        android:textColor="@color/white"
+        android:layout_below="@id/settingsBotonEstadisticas" />
+
+    <EditText
+        android:id="@+id/etNumeroTareasActivas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de tareas activas"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@id/tvNumeroTareasActivas" />
+
+    <TextView
+        android:id="@+id/tvNumeroTareasArchivadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de tareas archivadas"
+        android:textColor="@color/white"
+        android:layout_below="@id/etNumeroTareasActivas" />
+
+    <EditText
+        android:id="@+id/etNumeroTareasArchivadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de tareas archivadas"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@id/tvNumeroTareasArchivadas" />
+
+    <TextView
+        android:id="@+id/tvNumeroTareasAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de tareas con prioridad Alta"
+        android:textColor="@color/white"
+        android:layout_below="@id/etNumeroTareasArchivadas" />
+
+    <EditText
+        android:id="@+id/etNumeroTareasAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de tareas con prioridad Alta"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@id/tvNumeroTareasAlta" />
+
+    <TextView
+        android:id="@+id/tvNumeroTareasMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de tareas con prioridad Media"
+        android:textColor="@color/white"
+        android:layout_below="@id/etNumeroTareasAlta" />
+
+    <EditText
+        android:id="@+id/etNumeroTareasMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de tareas con prioridad Media"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@id/tvNumeroTareasMedia" />
+
+    <TextView
+        android:id="@+id/tvNumeroTareasBaja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de tareas con prioridad Baja"
+        android:textColor="@color/white"
+        android:layout_below="@id/etNumeroTareasMedia" />
+
+    <EditText
+        android:id="@+id/etNumeroTareasBaja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de tareas con prioridad Baja"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@id/tvNumeroTareasBaja" />
+
+    <!-- Gráfico Circular -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@id/etNumeroTareasBaja" />
+
+
+</RelativeLayout>

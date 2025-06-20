@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="430dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="300dp"
+        android:layout_height="430dp"
+        android:layout_gravity="center"
+        android:background="@color/azul_fondo"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/todoClose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="200dp"
+            app:srcCompat="@drawable/cancel_white" />
+
+        <TextView
+            android:id="@+id/text_view_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="16dp"
+            android:text="Tarea*"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/todoEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_task"
+            android:layout_marginTop="8dp"
+            android:hint="@string/type_your_task"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textMultiLine|textCapSentences"
+            android:scrollHorizontally="false"
+            android:backgroundTint="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/text_view_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/todoEt"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="16dp"
+            android:text="Descripción*"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/todoDescriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_notes"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint="@string/type_your_description"
+            android:inputType="textMultiLine|textCapSentences"
+            android:scrollHorizontally="false"
+            android:backgroundTint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/text_view_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/todoDescriptionEt"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:text="Categoría*"
+            android:textSize="14sp" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/todoCategoryEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_category"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint=""
+            android:inputType="textMultiLine|textCapSentences"
+            android:scrollHorizontally="false"
+            android:backgroundTint="@android:color/white" />
+        <!--Aquí falta el @string de categoría cuando lo haga-->
+        <TextView
+            android:id="@+id/text_view_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/todoCategoryEt"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="16dp"
+            android:text="Prioridad*"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/todoPrioritySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/text_view_priority"
+            android:layout_marginTop="8dp"
+            android:entries="@array/prioridades"
+            android:popupBackground="@color/azul_fondo" />
+
+
+        <ImageView
+            android:id="@+id/todoNextBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/todoPrioritySpinner"
+            android:layout_marginStart="200dp"
+
+            app:srcCompat="@drawable/btn" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

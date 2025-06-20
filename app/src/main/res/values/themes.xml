@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tasks4Today" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Aplica la fuente Montserrat y color de texto blanco a nivel global -->
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- Color blanco para todo el texto -->
+
+    </style>
+
+
+    <style name="Theme.Tasks4Today" parent="Base.Theme.Tasks4Today" />
+</resources>
+
