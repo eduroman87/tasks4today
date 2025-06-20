@@ -79,7 +79,7 @@ Aquí tienes algunas capturas reales de la aplicación **Tasks for Today** que i
 Puedes clonar este repositorio y abrirlo en Android Studio:
 
 
-git clone https://github.com/eduroman87/tasks-for-today.git
+git clone https://github.com/eduroman87/tasks4today.git
 
 
 > 📌 Requiere Android Studio 2022 o superior. Asegúrate de configurar Firebase correctamente si quieres ejecutar el proyecto con autenticación.
