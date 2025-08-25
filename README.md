@@ -43,7 +43,6 @@ Diseñada para quienes buscan una experiencia simple, directa y visual, permite 
 
 ---
 
-## 🖼️ Capturas de pantalla
 
 ## 🖼️ Capturas de pantalla
 
